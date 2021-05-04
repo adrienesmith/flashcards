@@ -35,7 +35,7 @@ export default function ViewDeck(){
         }
         loadCurrentDeck();
         return () => abortController.abort();
-    }, []);
+    }, [deckId, history]);
 
     return (
         <section className="container">

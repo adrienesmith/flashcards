@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { updateDeck } from "../../utils/api/index.js";
 

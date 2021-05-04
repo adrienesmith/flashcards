@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
 
 export default function CardBack({currentCardData, initialCard, currentCard, setCurrentCard, flip, setFlip, deckSize}) {

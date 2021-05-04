@@ -26,7 +26,7 @@ export default function Home(){
         }
         loadDecks();
         return () => abortController.abort();
-    }, []);
+    }, [history]);
 
     const list = decks.map((deck) => (
         <li key={deck.id} >

@@ -35,7 +35,7 @@ export default function Study() {
         }
         loadCurrentDeck();
         return () => abortController.abort();
-    }, []);
+    }, [deckId, history]);
 
 
     return (

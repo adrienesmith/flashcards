@@ -4,12 +4,6 @@ import { useHistory } from "react-router-dom";
 
 export default function AddCardForm({card, setCard}) {
 
-    const initialCardFormState = {
-        front: "",
-        back: "",
-        deckId: 0,
-    };
-
     const handleChange = ({ target }) => {
         setCard({
             ...card,

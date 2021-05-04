@@ -35,7 +35,7 @@ export default function EditDeck() {
         }
         loadCurrentDeck();
         return () => abortController.abort();
-    }, [deckId]);
+    }, [deckId, history]);
 
     useEffect(() => {
         setForm(deck)

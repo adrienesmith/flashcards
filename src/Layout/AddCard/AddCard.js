@@ -34,7 +34,7 @@ export default function AddCard() {
         }
         loadDeck(); 
         return () => abortController.abort();
-    }, []);
+    }, [deckId, history]);
 
     return (
         <section>

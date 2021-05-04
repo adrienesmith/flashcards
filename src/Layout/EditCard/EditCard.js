@@ -33,13 +33,13 @@ export default function EditCard() {
                 if (error.name === "AbortError"){
                     console.log("Deck list fetch failed")
                 } else {
-                    throw error;
+                    history.push(`/${error}`);
                 }
             }
         }
         loadDeck();
         return () => abortController.abort();
-    }, []);
+    }, [deckId, history]);
 
     useEffect(() => {
         const abortController = new AbortController();
@@ -58,7 +58,7 @@ export default function EditCard() {
         }
         loadCard();
         return () => abortController.abort();
-    }, []);
+    }, [cardId, history]);
 
     return (
         <section>
